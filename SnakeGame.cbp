@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SnakeGame" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SnakeGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../SDL2_image-2.8.0/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../SDL2_mixer-2.8.0/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../SDL2_ttf-2.20.1/x86_64-w64-mingw32/include/SDL2" />
+					<Add directory="../SDL2-2.28.5/x86_64-w64-mingw32/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-lmingw32 -lSDL2main -lSDL2" />
+					<Add option="-lSDL2_image" />
+					<Add option="-lSDL2_mixer" />
+					<Add option="-lSDL2_ttf" />
+					<Add directory="../SDL2_image-2.8.0/x86_64-w64-mingw32/lib" />
+					<Add directory="../SDL2_mixer-2.8.0/x86_64-w64-mingw32/lib" />
+					<Add directory="../SDL2_ttf-2.20.1/x86_64-w64-mingw32/lib" />
+					<Add directory="../SDL2-2.28.5/x86_64-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SnakeGame" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="exception.cpp" />
+		<Unit filename="exception.h" />
+		<Unit filename="field.cpp" />
+		<Unit filename="field.h" />
+		<Unit filename="font.cpp" />
+		<Unit filename="font.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="mainwindow.cpp" />
+		<Unit filename="mainwindow.h" />
+		<Unit filename="music.cpp" />
+		<Unit filename="music.h" />
+		<Unit filename="snake.cpp" />
+		<Unit filename="snake.h" />
+		<Unit filename="texture.cpp" />
+		<Unit filename="texture.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
